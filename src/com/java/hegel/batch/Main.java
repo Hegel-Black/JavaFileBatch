@@ -9,15 +9,16 @@ import java.io.IOException;
 
 public class Main {
     
-    public final static String TEST = "F:/Downloads/Test/";
+    public final static String TESTDIR = "F:/Downloads/Test/";
+    public final static String TESTFILE = "F:/Downloads/Test/demo.txt";
 
     public static void main(String[] args) {
     	
-//    	delAndRename("F:/CaritCode");
+//    	delAndRename(TESTDIR);
         System.out.println("Success!");
     }
     
-    // del test.java, then rename test.java_bak to test.java
+    // First del test.java, then rename test.java_bak to test.java
     private static void delAndRename(String dirPath) {
     	File file = new File(dirPath);
         if (file.isDirectory()) {
